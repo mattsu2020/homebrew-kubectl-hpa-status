@@ -5,21 +5,21 @@
 class KubectlHpaStatus < Formula
   desc "kubectl plugin for HPA status, scaling analysis, and suggested fixes"
   homepage "https://github.com/mattsu2020/kubectl-hpa-status"
-  version "0.7.0"
+  version "0.8.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mattsu2020/kubectl-hpa-status/releases/download/v0.7.0/kubectl-hpa-status_v0.7.0_darwin_amd64.tar.gz"
-      sha256 "79363c3a1afbddda9a3cbc09e5065569c2b31bed07af4e46851dc94a89de9635"
+      url "https://github.com/mattsu2020/kubectl-hpa-status/releases/download/v0.8.0/kubectl-hpa-status_v0.8.0_darwin_amd64.tar.gz"
+      sha256 "06f1defc4ca15de554b20baac33d751e44e3d6f1e6f9740cbb7a77566689e7c5"
 
       def install
         bin.install "kubectl-hpa-status"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mattsu2020/kubectl-hpa-status/releases/download/v0.7.0/kubectl-hpa-status_v0.7.0_darwin_arm64.tar.gz"
-      sha256 "df9df4781c17bdaf792cfa339f259d2fb12ee1bca43ed1f31a4b6e98c7313b7f"
+      url "https://github.com/mattsu2020/kubectl-hpa-status/releases/download/v0.8.0/kubectl-hpa-status_v0.8.0_darwin_arm64.tar.gz"
+      sha256 "1a26d0c7f5ffeba05e26cc4aa6edd9fa27557698ad0d635142b41fd9a10df7ea"
 
       def install
         bin.install "kubectl-hpa-status"
@@ -30,8 +30,8 @@ class KubectlHpaStatus < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mattsu2020/kubectl-hpa-status/releases/download/v0.7.0/kubectl-hpa-status_v0.7.0_linux_amd64.tar.gz"
-        sha256 "711b5e13f80f2ec2a1087f763efb5857afb3bf06a4ba0ca5c00d4cf467a06663"
+        url "https://github.com/mattsu2020/kubectl-hpa-status/releases/download/v0.8.0/kubectl-hpa-status_v0.8.0_linux_amd64.tar.gz"
+        sha256 "73fc8857bd04555e97faea68598634db140ce7d4209fa95ed7264a61daf4d3bc"
 
         def install
           bin.install "kubectl-hpa-status"
@@ -40,8 +40,8 @@ class KubectlHpaStatus < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mattsu2020/kubectl-hpa-status/releases/download/v0.7.0/kubectl-hpa-status_v0.7.0_linux_arm64.tar.gz"
-        sha256 "268e75433ac8a7be4d41f7ea30909b2fb035724d0e168fa48eaa509ddf183833"
+        url "https://github.com/mattsu2020/kubectl-hpa-status/releases/download/v0.8.0/kubectl-hpa-status_v0.8.0_linux_arm64.tar.gz"
+        sha256 "c25428ffbcb29fb25183b38cb7e80d74793b7302f6b6fd3f4e8cbe70b1256091"
 
         def install
           bin.install "kubectl-hpa-status"
